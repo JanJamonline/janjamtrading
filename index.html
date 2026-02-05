@@ -6,11 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
-body {
-  font-family: Arial;
-  margin:0;
-  padding:0;
-}
+body {font-family: Arial; margin:0; padding:0;}
 
 /* HEADER */
 header {
@@ -23,31 +19,16 @@ header {
   flex-wrap:wrap;
 }
 
-.brand {
-  display:flex;
-  align-items:center;
-}
-
-.logo {
-  max-width:140px;
-  margin-right:15px;
-}
-
-.brand-text h1 {
-  margin:0;
-  font-size:26px;
-}
-
-.brand-text p {
-  margin:0;
-  font-size:14px;
-  opacity:0.8;
-}
+.brand {display:flex; align-items:center;}
+.logo {max-width:140px; margin-right:15px;}
+.brand-text h1 {margin:0; font-size:26px;}
+.brand-text p {margin:0; font-size:14px; opacity:0.8;}
 
 /* NAV */
 .nav {
   display:flex;
   align-items:center;
+  flex-wrap:wrap;
 }
 
 .nav > a,
@@ -61,10 +42,7 @@ header {
 }
 
 /* DROPDOWN */
-.dropdown {
-  position:relative;
-}
-
+.dropdown {position:relative;}
 .dropdown-content {
   display:none;
   position:absolute;
@@ -75,43 +53,19 @@ header {
   box-shadow:0 4px 10px rgba(0,0,0,0.2);
   z-index:1000;
 }
-
 .dropdown-content a {
   color:#0a2540;
   padding:12px 16px;
   display:block;
   text-decoration:none;
-  font-weight:normal;
-  white-space:nowrap;
 }
-
-.dropdown-content a:hover {
-  background:#f0f0f0;
-}
-
-.dropdown:hover .dropdown-content,
-.dropdown-content:hover {
-  display:block;
-}
+.dropdown-content a:hover {background:#f0f0f0;}
+.dropdown:hover .dropdown-content {display:block;}
 
 /* HERO */
-.slider {
-  width:100%;
-  height:550px;
-  overflow:hidden;
-}
-
-.slides {
-  display:flex;
-  width:500%;
-  animation: slide 40s infinite;
-}
-
-.slides img {
-  width:100%;
-  height:550px;
-  object-fit:cover;
-}
+.slider {width:100%; height:550px; overflow:hidden;}
+.slides {display:flex; width:500%; animation: slide 40s infinite;}
+.slides img {width:100%; height:550px; object-fit:cover;}
 
 @keyframes slide {
   0% {margin-left:0;}
@@ -123,13 +77,8 @@ header {
 }
 
 /* CONTENT */
-section {
-  padding:70px;
-}
-
-h2 {
-  color:#0a2540;
-}
+section {padding:70px;}
+h2 {color:#0a2540;}
 
 .grid {
   display:grid;
@@ -147,68 +96,16 @@ h2 {
   text-decoration:none;
   color:#0a2540;
   font-weight:bold;
-  display:block;
 }
 
-footer {
-  background:#eee;
-  padding:20px;
-  text-align:center;
-}
+footer {background:#eee; padding:20px; text-align:center;}
 
 /* MOBILE */
-@media (max-width: 768px) {
-
-  header {
-    padding:15px 20px;
-  }
-
-  .brand {
-    width:100%;
-    margin-bottom:15px;
-  }
-
-  .nav {
-    width:100%;
-    flex-direction:column;
-    align-items:flex-start;
-  }
-
-  .nav > a,
-  .dropdown > a {
-    margin-left:0;
-    font-size:16px;
-  }
-
-  .dropdown-content {
-    position:static;
-    box-shadow:none;
-    width:100%;
-  }
-
-  .slider {
-    height:300px;
-  }
-
-  .slides img {
-    height:300px;
-  }
-
-  section {
-    padding:40px 20px;
-  }
-
-  h2 {
-    font-size:22px;
-  }
-
-  .brand-text h1 {
-    font-size:22px;
-  }
-
-  .brand-text p {
-    font-size:13px;
-  }
+@media(max-width:768px){
+  header {padding:15px;}
+  .nav a {font-size:16px; margin-left:15px;}
+  .slider, .slides img {height:300px;}
+  section {padding:40px 20px;}
 }
 </style>
 </head>
@@ -226,7 +123,6 @@ footer {
 
   <div class="nav">
     <a href="index.html">Home</a>
-
     <div class="dropdown">
       <a href="#">Products ▾</a>
       <div class="dropdown-content">
@@ -236,7 +132,6 @@ footer {
         <a href="products/gemstones.html">Gemstones</a>
       </div>
     </div>
-
     <a href="contact.html">Contact</a>
   </div>
 </header>
@@ -263,7 +158,7 @@ We operate as a professional intermediary, bridging the gap between internationa
 </p>
 
 <p>
-Our role is to simplify cross-border trade for our clients. We assist businesses in identifying suitable suppliers, validating product capabilities, coordinating pricing and documentation, and ensuring smooth information flow between all parties involved.
+Our role is to simplify cross-border trade for our clients. We assist businesses in identifying suitable suppliers, validating product capabilities, coordinating pricing structures, documentation, and logistics requirements, and ensuring smooth and transparent information flow between all parties involved.
 </p>
 
 <p>
@@ -271,7 +166,7 @@ Janjam Trading focuses exclusively on B2B and bulk trade. We work with importers
 </p>
 
 <p>
-By maintaining strong supplier networks in India and a clear understanding of buyer requirements in international markets, we aim to create transparent, efficient, and sustainable trade partnerships built on trust and consistency.
+By maintaining strong supplier networks in India and a clear understanding of buyer requirements in international markets, we aim to create transparent, efficient, and sustainable trade partnerships built on trust, consistency, and professional execution.
 </p>
 </section>
 
@@ -279,19 +174,19 @@ By maintaining strong supplier networks in India and a clear understanding of bu
 <h2>Why Choose Janjam Trading</h2>
 <div class="grid">
   <div class="box">Verified Supplier Network</div>
-  <div class="box">B2B Specialization</div>
-  <div class="box">Single Point of Contact</div>
-  <div class="box">Long-Term Partnerships</div>
+  <div class="box">B2B & Bulk Trade Focus</div>
+  <div class="box">Single Point of Coordination</div>
+  <div class="box">Long-Term Partnership Approach</div>
 </div>
 </section>
 
 <section>
 <h2>How We Work</h2>
 <div class="grid">
-  <div class="box">Requirement Analysis</div>
-  <div class="box">Supplier Identification</div>
-  <div class="box">Commercial Coordination</div>
-  <div class="box">Ongoing Support</div>
+  <div class="box">Requirement Analysis & Feasibility Review</div>
+  <div class="box">Supplier Identification & Validation</div>
+  <div class="box">Commercial & Documentation Coordination</div>
+  <div class="box">Ongoing Trade Support</div>
 </div>
 </section>
 
