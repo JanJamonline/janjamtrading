@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Janjam Trading</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body {font-family: Arial; margin:0; padding:0;}
+
+/* HEADER */
+header {
+  background:#0a2540;
+  color:white;
+  padding:15px 40px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.brand {display:flex; align-items:center;}
+.logo {max-width:140px; margin-right:15px;}
+.brand-text h1 {margin:0; font-size:26px;}
+.brand-text p {margin:0; font-size:14px; opacity:0.8;}
+
+/* NAV */
+.nav {
+  display:flex;
+  align-items:center;
+}
+
+.nav > a,
+.dropdown > a {
+  color:white;
+  margin-left:25px;
+  text-decoration:none;
+  font-weight:bold;
+  font-size:18px;
+  padding:10px 0;
+}
+
+/* DROPDOWN FIX */
+.dropdown {
+  position:relative;
+}
+
+.dropdown-content {
+  display:none;
+  position:absolute;
+  top:100%;
+  left:0;
+  background:white;
+  min-width:220px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.2);
+  z-index:1000;
+}
+
+.dropdown-content a {
+  color:#0a2540;
+  padding:12px 16px;
+  display:block;
+  text-decoration:none;
+  font-weight:normal;
+  white-space:nowrap;
+}
+
+.dropdown-content a:hover {
+  background:#f0f0f0;
+}
+
+/* THIS IS THE IMPORTANT PART */
+.dropdown:hover .dropdown-content,
+.dropdown-content:hover {
+  display:block;
+}
+
+/* HERO */
+.slider {width:100%; height:550px; overflow:hidden;}
+.slides {display:flex; width:500%; animation: slide 40s infinite;}
+.slides img {width:100%; height:550px; object-fit:cover;}
+
+@keyframes slide {
+  0% {margin-left:0;}
+  20% {margin-left:-100%;}
+  40% {margin-left:-200%;}
+  60% {margin-left:-300%;}
+  80% {margin-left:-400%;}
+  100% {margin-left:0;}
+}
+
+/* CONTENT */
+section {padding:70px;}
+h2 {color:#0a2540;}
+
+.grid {
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap:30px;
+}
+
+.box {
+  background:#f7f7f7;
+  padding:25px;
+  border-radius:8px;
+}
+
+.box a {
+  text-decoration:none;
+  color:#0a2540;
+  font-weight:bold;
+  display:block;
+}
+
+footer {background:#eee; padding:20px; text-align:center;}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="brand">
+    <img src="logo.png" class="logo">
+    <div class="brand-text">
+      <h1>Janjam Trading</h1>
+      <p>Connecting European & African Buyers with Trusted Indian Suppliers</p>
+    </div>
+  </div>
+
+  <div class="nav">
+    <a href="index.html">Home</a>
+
+    <div class="dropdown">
+      <a href="#">Products ▾</a>
+      <div class="dropdown-content">
+        <a href="products/spices.html">Spices</a>
+        <a href="products/cotton.html">Pure Cotton Products</a>
+        <a href="products/medical.html">Medical Equipment</a>
+        <a href="products/gemstones.html">Gemstones</a>
+      </div>
+    </div>
+
+    <a href="contact.html">Contact</a>
+  </div>
+</header>
+
+<div class="slider">
+  <div class="slides">
+    <img src="hero1.jpg">
+    <img src="hero2.jpg">
+    <img src="hero3.jpg">
+    <img src="hero4.jpg">
+    <img src="hero5.jpg">
+  </div>
+</div>
+
+<section>
+<h2>About Janjam Trading</h2>
+<p>
+Janjam Trading is an independent international trade brokerage and sourcing firm specializing in connecting buyers across Europe and Africa with reliable manufacturers, exporters, and producers in India.
+</p>
+<p>
+We operate as a professional intermediary, helping businesses source products from India through transparent communication, professional coordination, and structured trade processes.
+</p>
+<p>
+We focus exclusively on B2B and bulk trade, working with importers, distributors, wholesalers, retailers, and industrial buyers.
+</p>
+</section>
+
+<section>
+<h2>Why Choose Janjam Trading</h2>
+<div class="grid">
+  <div class="box">Verified Supplier Network</div>
+  <div class="box">B2B Specialization</div>
+  <div class="box">Single Point of Contact</div>
+  <div class="box">Long-Term Partnerships</div>
+</div>
+</section>
+
+<section>
+<h2>How We Work</h2>
+<div class="grid">
+  <div class="box">Requirement Analysis</div>
+  <div class="box">Supplier Identification</div>
+  <div class="box">Commercial Coordination</div>
+  <div class="box">Ongoing Support</div>
+</div>
+</section>
+
+<section>
+<h2>Our Products</h2>
+<div class="grid">
+  <div class="box"><a href="products/spices.html">Spices</a></div>
+  <div class="box"><a href="products/cotton.html">Pure Cotton Products</a></div>
+  <div class="box"><a href="products/medical.html">Medical Equipment</a></div>
+  <div class="box"><a href="products/gemstones.html">Gemstones</a></div>
+</div>
+</section>
+
+<section>
+<h2>Regions We Serve</h2>
+<div class="grid">
+  <div class="box">Europe</div>
+  <div class="box">North Africa</div>
+  <div class="box">West Africa</div>
+  <div class="box">Middle East</div>
+</div>
+</section>
+
+<footer>
+<p>© Janjam Trading</p>
+</footer>
+
+</body>
+</html>

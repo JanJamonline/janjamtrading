@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact - Janjam Trading</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body {font-family: Arial; margin:0; padding:0;}
+header {background:#0a2540; color:white; padding:15px 40px; display:flex; align-items:center; justify-content:space-between;}
+.brand {display:flex; align-items:center;}
+.logo {max-width:140px; margin-right:15px;}
+.brand-text h1 {margin:0; font-size:26px;}
+.brand-text p {margin:0; font-size:14px; opacity:0.8;}
+.nav a {color:white; margin-left:25px; text-decoration:none; font-weight:bold; font-size:18px;}
+section {padding:70px;}
+input, textarea, select {width:100%; padding:10px; margin-top:10px;}
+button {margin-top:15px; padding:12px 25px; background:#0a2540; color:white; border:none; cursor:pointer;}
+footer {background:#eee; padding:20px; text-align:center;}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="brand">
+    <img src="logo.png" class="logo">
+    <div class="brand-text">
+      <h1>Janjam Trading</h1>
+      <p>Connecting European & African Buyers with Trusted Indian Suppliers</p>
+    </div>
+  </div>
+  <div class="nav">
+    <a href="index.html">Home</a>
+    <a href="index.html#products">Products</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</header>
+
+<section>
+<h2>Send Your Inquiry</h2>
+
+<form name="contact" method="POST" data-netlify="true">
+  <input type="hidden" name="form-name" value="contact">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="text" name="company" placeholder="Company Name">
+  <input type="email" name="email" placeholder="Email" required>
+  <input type="text" name="country" placeholder="Country">
+  <select name="product">
+    <option>Spices</option>
+    <option>Pure Cotton</option>
+    <option>Medical Equipment</option>
+    <option>Gemstones</option>
+  </select>
+  <textarea name="message" rows="5" placeholder="Your requirement"></textarea>
+  <button type="submit">Send Inquiry</button>
+</form>
+
+<p>
+Email: sreejan@janjamtrading.com<br>
+WhatsApp: +34 677 773 726
+</p>
+</section>
+
+<footer>
+<p>© Janjam Trading</p>
+</footer>
+
+</body>
+</html>
